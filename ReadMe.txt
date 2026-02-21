@@ -10,7 +10,11 @@ TODO:
 	http://www.softelectro.ru/ieee754.html
 	https://github.com/okovtun/PV_522_DBMS/blob/master/03-DataTypes/IEEE_2008.pdf
 4. Почить про системы счисления:
+	https://github.com/okovtun/PV_522_DBMS/blob/master/Error.png	!!!
 	https://github.com/okovtun/PV_522_DBMS/blob/master/NumericSystems.pdf
+5. В чем разница между Юлианским и Григорианским календарями;
+6. В чем разница между GMT и UTC;
+7. На сколько градусов поворачивается Земля за 1 час;
 
 DONE:
 1. Предумиотреть посещаемость студентов;
