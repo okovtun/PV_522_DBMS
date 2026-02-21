@@ -6,6 +6,8 @@ MIL-STD-810
 TODO:
 1. https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 2. https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver17
+3. Почитать про IEEE-754: http://www.softelectro.ru/ieee754.html
+4. Почить про системы счисления: 
 
 DONE:
 1. Предумиотреть посещаемость студентов;
