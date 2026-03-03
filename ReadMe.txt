@@ -3,7 +3,19 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiINquFKFDpRBEMvNCqlgSxii
 
 MIL-STD-810
 
+Transact-SQL:
+1. https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver17&tabs=sqlpool
+	https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver17&tabs=sqlpool#:~:text=the%20SIZE%20parameter.-,SQL,-Copy
+
 TODO:
+1. Создать таблицы 'Students' и 'Teachers';
+
+DONE:
+1. Добить Базу;
+2. Прислать ERD Базы с сервера;
+
+DONE:
+0. Пока учим теорию;
 1. https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 2. https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver17
 3. Почитать про IEEE-754: 
