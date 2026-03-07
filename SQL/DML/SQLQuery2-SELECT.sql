@@ -1,8 +1,8 @@
 --SQLQuery2-SELECT.sql
-USE PV_522_DDL;
+USE PV_522_Import;
 
-ALTER TABLE		Groups
-ALTER COLUMN	start_time TIME(0) NOT NULL;
+--ALTER TABLE		Groups
+--ALTER COLUMN	start_time TIME(0) NOT NULL;
 
 SELECT
 		group_name		AS	N'Группа',
