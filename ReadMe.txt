@@ -5,9 +5,19 @@ MIL-STD-810
 
 Transact-SQL:
 1. https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver17&tabs=sqlpool
-	https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver17&tabs=sqlpool#:~:text=the%20SIZE%20parameter.-,SQL,-Copy
+   https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver17&tabs=sqlpool#:~:text=the%20SIZE%20parameter.-,SQL,-Copy
 
 TODO:
+1. Какого типа выбрать первичный ключ для таблицы 'Orders' (Заказы) в службе такси или службе доставки?
+
+DONE:
+1. В проект 'DDL' добавить запрос 'SQLQuery4-CREATE Schadule branch', и в нем добить Базу, а именно,
+   таблицы Schedule, Grades и HomeWorks. Подумать над таблицами HWResults и Exams;
+2. В проект 'DDL' добавить запрос 'SQLQuery5-ALL_IN_ONE', который полностью создает Базу Данных 
+   'PV_522_ALL_IN_ONE', начиная от CREATE DATABASE, и заканчивая последней таблицей;
+3. В ДЗ прислать файл 'SQLQuery5-ALL_IN_ONE';
+
+DONE:
 1. Создать таблицы 'Students' и 'Teachers';
 
 DONE:

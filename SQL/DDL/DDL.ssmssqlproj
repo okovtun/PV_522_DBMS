@@ -28,11 +28,29 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery1-CREATE DATABASE.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery1-DROP DATABASE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-QHG18FL\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-QHG18FL\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1-DROP DATABASE.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery2-CREATE Students branch.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-QHG18FL\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-QHG18FL\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery2-CREATE Students branch.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3-CREATE Disciplines branch.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-QHG18FL\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-QHG18FL\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery3-CREATE Disciplines branch.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4-CREATE Schedule branch.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-QHG18FL\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-QHG18FL\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4-CREATE Schedule branch.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
