@@ -8,6 +8,9 @@ Transact-SQL:
    https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver17&tabs=sqlpool#:~:text=the%20SIZE%20parameter.-,SQL,-Copy
 
 TODO:
+1. Заполнить расписание для своей группы с первого дня обучения до текущей дисциплины;
+
+DONE:
 1. Вывести содежимое таблицы 'Disciplines';
 2. Для выбранного преподавателя вывести все дисциплины, которые он может вести;
 3. Для выбранной дисциплины выбрать всех преподавателей, которые могут ее вести;
