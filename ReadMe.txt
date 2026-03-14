@@ -3,6 +3,37 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiINquFKFDpRBEMvNCqlgSxii
 
 MIL-STD-810
 
+Stored Procedure
+CREATE PROCEDURE	sp_ProcedureName	@parameter_1 AS TYPE, @parameter_2 AS TYPE, .... @parameter_N AS TYPE
+AS
+BEGIN
+	.....
+	GROUP OF STATEMENTS .....
+	.....
+END
+
+ALTER PROCEDURE
+
+TODO:
+0. Сделать резервную копию Базы;
+1. Выставить расписание на Базовый семестр по схеме 12-21;
+2. * Наша процедура выставляет расписание только на вторник, четверг и субботу, но есть группы,
+     которые занимаются по другим дням, например: 
+		Пн.,Ср.,Пт;
+		Вт.,Чт.;
+		Вт.,Чт.,Пт;
+		Пн.,Пт.;
+3. При выставлении расписания предусмотреть каникулы и праздничные дни;
+
+
+int a;
+int b = 3;
+int c = a + b;
+
+a + b + c;
+
+a = b = c = 0;
+
 Transact-SQL:
 1. https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver17&tabs=sqlpool
    https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver17&tabs=sqlpool#:~:text=the%20SIZE%20parameter.-,SQL,-Copy
