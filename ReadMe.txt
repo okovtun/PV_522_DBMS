@@ -14,6 +14,20 @@ END
 
 ALTER PROCEDURE
 
+Functions
+RETURNS TYPE
+RETURN value;
+WHERE, HAVING
+
+CREATE FUNCTION FunctionName	(@param_1 AS TYPE, @param_2 AS TYPE, ...., @param_N AS TYPE)	RETURNS TYPE
+AS
+BEGIN
+	........;
+	........;
+	RETURN @value;
+END
+dbo.Function(...);	--	Вызов функции.
+
 TODO:
 0. Сделать резервную копию Базы;
 1. Выставить расписание на Базовый семестр по схеме 12-21;
