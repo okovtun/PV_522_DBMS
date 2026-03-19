@@ -1,4 +1,4 @@
---SQLQuery1-GetLastLearningDate.sql
+п»ї--SQLQuery1-GetLastLearningDate.sql
 USE PV_522_Import;
 GO
 
@@ -9,7 +9,7 @@ BEGIN
 	--DECLARE @group_id	AS	INT	=	(SELECT group_id	FROM Groups		WHERE group_name	= @group_name);
 	--RETURN (SELECT MAX([date]) FROM Schedule WHERE [group]=@group_id);
 	--DECLARE @date		AS	DATE=	(SELECT MAX([date]) FROM Schedule	WHERE [group]		= @group_id);
-	----MAX() - это функция агрегирования
-	----К функциям агрегирования относятся SUM(), COUNT(), AVG(), MIN() и MAX();
+	----MAX() - СЌС‚Рѕ С„СѓРЅРєС†РёСЏ Р°РіСЂРµРіРёСЂРѕРІР°РЅРёСЏ
+	----Рљ С„СѓРЅРєС†РёСЏРј Р°РіСЂРµРіРёСЂРѕРІР°РЅРёСЏ РѕС‚РЅРѕСЃСЏС‚СЃСЏ SUM(), COUNT(), AVG(), MIN() Рё MAX();
 	--RETURN	@date;
 END
