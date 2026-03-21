@@ -1,7 +1,8 @@
 --SQLQuery0-CHECK.sql
 USE PV_522_Import;
+SET DATEFIRST 1;
 
-PRINT dbo.GetLastLearningDate(N'PV_522');
+--PRINT dbo.GetLastLearningDate(N'PV_522');
 --EXEC sp_SelectSchedule;
 
 --DROP #Groups;
@@ -14,18 +15,4 @@ PRINT dbo.GetLastLearningDate(N'PV_522');
 
 --SELECT * FROM #Groups;
 
-SELECT * INTO #Numbers FROM		(3), (5), (8), (13), (21);
-
-
-SELECT * FROM #Numbers;
-
-int Add(int a, int b)
-{
-	return a+b;
-}
-void main()
-{
-	--cout << Add(2,3) << endl;
-	int res = Add(2,3);
-	cout << res << endl;
-}
+PRINT dbo.GetNextLearningDay(N'PV_522', N'2026-03-19')
