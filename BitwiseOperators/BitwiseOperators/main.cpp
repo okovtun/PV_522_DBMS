@@ -56,38 +56,75 @@
 //}
 
 
-#include <iostream>
-#include <bitset>
+//#include <iostream>
+//#include <bitset>
+//using namespace std;
+//
+//int main()
+//{
+//	uint8_t a = 0b00001000;
+//	uint8_t b = 0b00000100;
+//
+//	cout << "START::::::::::::::::::::\n\n";
+//	cout << "a = " << int(a) << " OR " << bitset<8>(a) << '\n';
+//	cout << "b = " << int(b) << " OR " << bitset<8>(b) << "\n\n";
+//
+//	void(*lazy_developer)(const char*, const uint8_t &, const uint8_t &) = [](const char* str, const uint8_t& a, const uint8_t& b)
+//	{
+//		cout << str << bitset<8>(a xor b) << " = " << bitset<8>(a) << " XOR " << bitset<8>(b) << '\n';
+//	};
+//
+//	lazy_developer("a = ", a, b);
+//	a = a xor b;
+//
+//	lazy_developer("b = ", a, b);
+//	b = a xor b;
+//
+//	lazy_developer("a = ", a, b);
+//	a = a xor b;
+//
+//	cout << "\n\nRESULT::::::::::::::::::::\n\n";
+//	cout << "a = " << int(a) << " OR " << bitset<8>(a) << '\n';
+//	cout << "b = " << int(b) << " OR " << bitset<8>(b) << '\n';
+//
+//	system("pause");
+//
+//	return 0;
+//}
+
+#include<iostream>
 using namespace std;
+
+int binary_multiple(int value, int value2)
+{
+	int binary_pow = log2(value2);
+	int result = (value << binary_pow);
+	while (binary_pow > 0)
+	{
+		value2 -= 1 << binary_pow;
+		binary_pow = log2(value2);
+		result += (value << binary_pow);
+	}
+	return result + value * (value2 - 1);
+}
+void test(int value, int start_value2, int end_value2)
+{
+	for (int i = start_value2; i < end_value2; i++)
+	{
+		cout << value << " * " << i << " " 
+			<< (value * i == binary_multiple(value, i) ? " complied" : " passed") 
+			<< "\t"
+			<< binary_multiple(value, i)
+			<< endl;
+	}
+}
 
 int main()
 {
-	uint8_t a = 0b00001000;
-	uint8_t b = 0b00000100;
+	//cout << binary_multiple(1024 , 1) <<" binar"<< endl;
+	//cout << 1024 * 1 << " arif"<< endl;
+	//cout << 1024 * 1 - binary_multiple(1024 , 1) <<" space"<< endl;
 
-	cout << "START::::::::::::::::::::\n\n";
-	cout << "a = " << int(a) << " OR " << bitset<8>(a) << '\n';
-	cout << "b = " << int(b) << " OR " << bitset<8>(b) << "\n\n";
-
-	void(*lazy_developer)(const char*, const uint8_t &, const uint8_t &) = [](const char* str, const uint8_t& a, const uint8_t& b)
-	{
-		cout << str << bitset<8>(a xor b) << " = " << bitset<8>(a) << " XOR " << bitset<8>(b) << '\n';
-	};
-
-	lazy_developer("a = ", a, b);
-	a = a xor b;
-
-	lazy_developer("b = ", a, b);
-	b = a xor b;
-
-	lazy_developer("a = ", a, b);
-	a = a xor b;
-
-	cout << "\n\nRESULT::::::::::::::::::::\n\n";
-	cout << "a = " << int(a) << " OR " << bitset<8>(a) << '\n';
-	cout << "b = " << int(b) << " OR " << bitset<8>(b) << '\n';
-
-	system("pause");
-
+	test(5, -20, 20);
 	return 0;
 }

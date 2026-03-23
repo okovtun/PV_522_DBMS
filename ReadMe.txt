@@ -3,6 +3,11 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiINquFKFDpRBEMvNCqlgSxii
 
 MIL-STD-810
 
+TODO:
+1. Исправить ошибку 'Arithmetic overflow' при вызове 'dbo.GetNextLearningDate';
+2. Применить функцию 'dbo.GetNextLearningDate' в процедуре 'sp_InsertSchedule';
+3. При выставлении расписания предусмотреть каникулы и праздницные дни;
+
 Stored Procedure
 CREATE PROCEDURE	sp_ProcedureName	@parameter_1 AS TYPE, @parameter_2 AS TYPE, .... @parameter_N AS TYPE
 AS
