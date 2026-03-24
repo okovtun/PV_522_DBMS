@@ -4,9 +4,16 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiINquFKFDpRBEMvNCqlgSxii
 MIL-STD-810
 
 TODO:
-1. Исправить ошибку 'Arithmetic overflow' при вызове 'dbo.GetNextLearningDate';
-2. Применить функцию 'dbo.GetNextLearningDate' в процедуре 'sp_InsertSchedule';
-3. При выставлении расписания предусмотреть каникулы и праздницные дни;
+0. Сделать BackUp Базы;
+1. Написать функцию GetEasterDate(), которая определяет дату празднования Пасхи в указанном году;
+2. Написать функцию InsertHolidays(),которая выставляет выходные дни на указанный праздник в указанном году;
+3. Написать функцию GetHolidaysStartDate(), которая возвращает дату начала указанного праздника в указанном году;
+4. Написать функцию, которая заполняет таблицу DaysOFF всеми праздниками и каникулами на указанный год;
+
+TODO:
+1. Исправить ошибку 'Arithmetic overflow' при вызове 'dbo.GetNextLearningDate';	DONE
+2. Применить функцию 'dbo.GetNextLearningDate' в процедуре 'sp_InsertSchedule';	DONE
+3. При выставлении расписания предусмотреть каникулы и праздницные дни;	
 
 Stored Procedure
 CREATE PROCEDURE	sp_ProcedureName	@parameter_1 AS TYPE, @parameter_2 AS TYPE, .... @parameter_N AS TYPE

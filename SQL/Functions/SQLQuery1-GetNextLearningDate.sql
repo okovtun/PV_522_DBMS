@@ -7,8 +7,9 @@ CREATE OR ALTER FUNCTION GetNextLearningDate(@group_name AS NCHAR(10), @last_lea
 AS
 BEGIN
 		DECLARE @last_learning_day	AS	TINYINT	=	DATEPART(WEEKDAY, @last_learning_date);
-		DECLARE @next_learning_day	AS	TINYINT =	dbo.GetNextLearningDay(@group_name, @last_learning_date);
-		DECLARE @interval			AS	TINYINT	=	@next_learning_day - @last_learning_day;
+		DECLARE @next_learning_day	AS	SMALLINT=	dbo.GetNextLearningDay(@group_name, @last_learning_date);
+		DECLARE @interval			AS	SMALLINT=	@next_learning_day - @last_learning_day;
+		--https://learn.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-ver17
 		IF @interval < 0	SET @interval = 7 + @interval;
 		RETURN	DATEADD(DAY, @interval, @last_learning_date);
 END
