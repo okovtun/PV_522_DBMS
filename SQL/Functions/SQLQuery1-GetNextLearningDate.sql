@@ -11,5 +11,11 @@ BEGIN
 		DECLARE @interval			AS	SMALLINT=	@next_learning_day - @last_learning_day;
 		--https://learn.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-ver17
 		IF @interval < 0	SET @interval = 7 + @interval;
-		RETURN	DATEADD(DAY, @interval, @last_learning_date);
+		DECLARE @date AS DATE =	DATEADD(DAY, @interval, @last_learning_date);
+		RETURN IIF
+				(
+				NOT EXISTS(SELECT [date] FROM DaysOFF WHERE [date]=@date),
+				@date,
+				dbo.GetNextLearningDate(@group_name,@date)
+				);
 END
